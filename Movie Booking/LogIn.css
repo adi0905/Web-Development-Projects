@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 90vh;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  background-color: #333;
+  width: 50%;
+  height: 80%;
+}
+
+.signInForm,
+.logInForm {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  opacity: 0.9;
+  color: #fff;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.signInForm > h1,
+.signInForm > h3,
+.signInForm > input,
+.logInForm > input,
+button {
+  margin-bottom: 5%;
+}
+.logInForm> h1{
+  margin-bottom: 12%;
+}
+
+.signInForm > input,
+.logInForm > input {
+  width: 100%;
+  height: 7%;
+  border: none;
+  border-radius: 30px;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.login,
+.signUp {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color: #0a83f5;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn_signup,
+.btn_login {
+  color: #3a3939;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2% 5%;
+  border-radius: 50rem;
+}
+.hidden {
+  opacity: 0;
+}
+@media screen and (min-width: 300px) and (max-width:480px){
+  .logInForm {
+    width: 50%;    
+    text-align: center;
+    transition: all 0.75s;
+  }
+  main{
+    width: 90%;
+     height: 40%;
+   } 
+   .signInForm > h1,.logInForm > h1{
+    font-size: 15px ;
+   }
+   .btn_signup,
+.btn_login,.login,.signUp{
+  font-size: 10px;
+}
+.signInForm > h3,.logInForm > h3{
+  font-size: 15px;
+}
+.signInForm > input,
+.logInForm > input{
+  font-size: 10px;
+}
+}
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
+  .logInForm {
+    width: 50%;    
+    text-align: center;
+    transition: all 0.75s;
+  }
+  main{
+    width: 85%;
+     height: 50%;
+   } 
+   .signInForm > input,
+.logInForm > input {
+  width: 100%;
+  height: 7%;
+  border: none;
+  border-radius: 30px;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+} */
+@media screen and (min-width: 769px) and (max-width: 1115px) {
+  .logInForm {
+    width: 50%;    
+    text-align: center;
+    transition: all 0.75s;
+  }
+  main{
+    width: 85%;
+     height: 40%;
+   } 
+   .signInForm > input,
+.logInForm > input {
+  width: 100%;
+  height: 7.5%;
+  font-size: 21px;
+}
+.signInForm > h1,.logInForm > h1{
+  font-size: 32px ;
+ }
+ .btn_signup,
+.btn_login,.login,.signUp{
+font-size: 22px;
+}
+.signInForm > h3,.logInForm > h3{
+font-size: 28px;
+}
+
+}
